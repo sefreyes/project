@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<div class="panel panel-body">
+<h2>Welcome to the Third World Studies Center</h2>
+
+<p>
+    The Third World Studies Center (TWSC) of the University of the Philippines is an academic research institute committed to analyze and develop alternative perspectives on Philippine, regional and global issues. 
+</p>
+</div>
+{% endblocktrans %}
+{% endblock %}
