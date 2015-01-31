@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+<!--TITLE!
+{% block title %}{% trans "Third World Studies Center" %}{% endblock %} -->
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<head>
+
+<div class="panel panel-body">
+        <p>The Third World Studies Center (TWSC) of the University of the Philippines is an academic research institute committed to analyze and develop alternative perspective on Philippine, regional and global issues. 
+        <a href="#">Read more.</a>
+        </p>
+</div>
+
+
+<div class="panel panel-body">
+<h2>Welcome to the Third World Studies Center</h2>
+
+<p>
+    The Third World Studies Center (TWSC) of the University of the Philippines is an academic research institute committed to analyze and develop alternative perspectives on Philippine, regional and global issues. 
+</p>
+</div>
+</head>
+
+<div class="container">
+	<h3>CONNECT WITH US</h3>
+	<!-- I got these buttons from simplesharebuttons.com -->
+	<div id="share-buttons">
+	 
+	<!-- Facebook -->
+	<a href="http://www.facebook.com/sharer.php?u=http://www.twsc.upd.edu.ph" target="_blank"><img src="static/img/facebook.png" alt="Facebook" width="40" height="40" /></a>
+	 
+	<!-- Twitter -->
+	<a href="http://twitter.com/share?url=http://www.twsc.upd.edu.ph" target="_blank"><img src="static/img/twitter.png" alt="Twitter" width="40" height="40" /></a>
+	 
+	<!-- Google+ -->
+	<a href="https://plus.google.com/share?url=http://www.twsc.upd.edu.ph" target="_blank"><img src="static/img/google.png" alt="Google" width="40" height="40" /></a>
+	 
+	<!-- Digg -->
+	<a href="http://www.digg.com/submit?url=http://www.twsc.upd.edu.ph" target="_blank"><img src="static/img/diggit.png" alt="Digg" width="40" height="40"/></a>
+	 
+	<!-- Reddit -->
+	<a href="http://reddit.com/submit?url=http://www.twsc.upd.edu.ph" target="_blank"><img src="static/img/reddit.png" alt="Reddit" width="40" height="40" /></a>
+	 
+	<!-- LinkedIn -->
+	<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.twsc.upd.edu.ph" target="_blank"><img src="static/img/linkedin.png" alt="LinkedIn" width="40" height="40" /></a>
+	 
+	<!-- StumbleUpon-->
+	<a href="http://www.stumbleupon.com/submit?url=http://www.twsc.upd.edu.ph" target="_blank"><img src="static/img/stumbleupon.png" alt="StumbleUpon" width="40" height="40" /></a>
+	 
+	</div>
+
+</div>
+
+</head>
+
+
+
+
+{% endblocktrans %}
+{% endblock %}
