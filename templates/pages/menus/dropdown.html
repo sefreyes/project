@@ -6,14 +6,17 @@
 <ul class="nav navbar-nav">
     {% for page in page_branch %}
     {% if not has_home and page.is_primary and forloop.first %}
-    <li{% if on_home %} class="active"{% endif %} id="dropdown-menu-home">
+    <li{% if on_home %} class="active" {% endif %} id="dropdown-menu-home" color = "#a1d29b">
         <a href="{% url "home" %}">{% trans "Home" %}</a>
+        <!--ORIGINAL<a href="{% url "home" %}">{% trans "Home" %}</a>-->
     </li>
     {% endif %}
     {% if page.in_menu %}
     <li class="{% if page.has_children_in_menu %}dropdown{% endif %}
                {% if page.is_current_or_ascendant %}active{% endif %}"
-        id="{{ page.html_id }}">
+
+        id="{{ page.html_id }}" color = "#a1d29b">
+
         <a href="{{ page.get_absolute_url }}"
         {% if page.has_children_in_menu %}
         class="dropdown-toggle disabled" data-toggle="dropdown"
@@ -23,6 +26,7 @@
         </a>
         {% if page.has_children_in_menu %}{% page_menu page %}{% endif %}
     </li>
+
     {% endif %}
     {% endfor %}
 </ul>
@@ -33,7 +37,9 @@
     {% if page.in_menu %}
     <li class="{% if page.has_children_in_menu %}dropdown-submenu{% endif %}
                {% if page.is_current_or_ascendant %}active{% endif %}"
-        id="{{ page.html_id }}">
+
+        id="{{ page.html_id }}" color = "#a1d29b">
+
         <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
         {% if page.has_children_in_menu %}{% page_menu page %}{% endif %}
     </li>
