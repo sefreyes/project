@@ -8,7 +8,10 @@
         {% if forloop.first %}
             <div class="nav-footer">
         {% endif %}
-
+		
+		{% if forloop.counter == 3		%}
+			 <img src="/static/img/logo.png" alt="TWSC" style="width:200px;height:200px">
+		{% endif %}
         {% if page.in_menu %}
 
             <ul class="list-unstyled">
