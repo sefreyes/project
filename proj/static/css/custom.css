@@ -3,10 +3,99 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 
 }
+/* link colors */
+
+legend {
+  border-bottom: 0px solid #e5e5e5;
+}
+
+/* big buttons  */
+.btn-primary {
+  background-color: #0C3031;
+  border-color: #041112;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #175c5e;
+  border-color: #134d4f;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #74e781;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.linkifyplus > a,
+.panel > a,
+.col-md-7 > .panel > p > a,
+.col-md-2 > .row > .panel > .panel-body > p > a,
+.col-md-2 > .row > .panel > .panel-body > a,
+.col-md-2 > .row > .panel > .panel-body > center > a,
+.col-md-7 > p > a {
+	color: #54B567;
+}
+ 
+.nav-footer > ul > li > a,
+.site-info > a {
+	color: #0C3031
+}
+
+/* dropdown highlights */
+.form-control:focus {
+  border-color: #74e781;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(116, 231, 129, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(116, 231, 129, 0.6);
+}
+/* text input highlights*/
+.form-group > input[type="text"]:focus,
+.form-group > input[type="password"]:focus,
+.form-group > input[type="datetime"]:focus,
+.form-group > input[type="datetime-local"]:focus,
+.form-group > input[type="date"]:focus,
+.form-group > input[type="month"]:focus,
+.form-group > input[type="time"]:focus,
+.form-group > input[type="week"]:focus,
+.form-group > input[type="number"]:focus,
+.form-group > input[type="email"]:focus,
+.form-group > input[type="url"]:focus,
+.form-group > input[type="search"]:focus,
+.form-group > input[type="tel"]:focus,
+.form-group > input[type="color"]:focus,
+.form-group > select:focus,
+.form-group > textarea:focus {
+  border-color: #74e781;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(116, 231, 129, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(116, 231, 129, 0.6);
+}
 
 /*navbar*/
 .navbar-default {
-  background-color: #a1d29b;
+  background-color: #74e781;
   border-color: #54B567;
 }
 /*TITLE*/
@@ -42,7 +131,7 @@ body {
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #a1d29b;
+  color: #74e781;
   background-color: #0a523c;
 }
 
@@ -81,48 +170,48 @@ body {
 /*color ng dropdown*/
 .navbar-nav .open .dropdown-menu > li > a {
   color: #000000;
-  background-color: #a1d29b;
+  background-color: #74e781;
 }
 /*color ng dropdown pag hover*/
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #a1d29b;
+    color: #74e781;
     background-color: #0a523c;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #a1d29b;
+  color: #74e781;
   background-color: #0a523c;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-color: #a1d29b;
+color: #74e781;
 background-color: #0a523c;
 }
 
 .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: #a1d29b;
+    background-color: #74e781;
   }
 
 
 .navbar-default .navbar-link {
-  color: #a1d29b;
+  color: #74e781;
 }
 
 .navbar-default .navbar-link:hover {
-  color: #a1d29b;
+  color: #74e781;
 }
 
 
 
 
 footer {
-  background-color: #a1d29b;
+  background-color: #74e781;
   border-top: 1px solid #E7E7E7;
   margin-top: 15px;
   padding: 15px 0 30px;

@@ -16,13 +16,13 @@
 
 <form method="post"{% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
     <fieldset>
-    <legend>{{ title }}</legend>
+    
     {% fields_for form %}
-    <div class="form-actions">
+  <!--   <div class="form-actions"> -->
         {% block account_form_actions %}
-        <input class="btn btn-primary btn-lg pull-right" type="submit" value="{{ title }}">
+        <input class="btn btn-primary btn-lg pull-left" type="submit" value="{{ title }}">
         {% endblock %}
-    </div>
+<!--     </div> -->
     </fieldset>
 </form>
 {% endblock %}
