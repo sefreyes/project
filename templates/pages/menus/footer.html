@@ -10,13 +10,24 @@
         {% endif %}
 		
 		{% if forloop.counter == 2		%}
-			 <img src="/static/img/logo.png" alt="TWSC" style="width:200px;height:200px">
+			<!-- add ul after first column -->
+		<!-- 	</div> -->
+			 </ul><img src="/static/img/logo.png" alt="TWSC" style="width:200px;height:200px" hspace="10">
 		{% endif %}
 		
-       {% if page.in_menu %}
+		{% if forloop.counter == 1 or forloop.counter == 2 and page.in_menu %}
+			{% if forloop.counter == 1 %} 
+	<!-- 			<div class="col1"> -->
+           <ul class="list-unstyled col1">
+			{% endif %}
+			{% if forloop.counter == 2 %} 
+				<!-- <div class="col2"> -->
+           <ul class="list-unstyled col2">
+			{% endif %}
 			
-            <ul class="list-unstyled">
-        {% endif %}
+		{% endif %}
+
+		
     {% endif %}
 
     {% if page.in_menu %}
@@ -32,18 +43,17 @@
 
     {% if page.in_menu %}
         {% if forloop.first and not page.parent.in_menu and not page.is_primary %}
-            </li></ul>
+            </li> </ul>
         {% endif %}
     {% endif %}
 
     {% if page.is_primary %}
-        {% if page.in_menu %}
-            </ul>
-        {% endif %}
+		<!-- ul supposed to add here per column but removed it and put it to last only. -->
+
         {% if forloop.last %}
-            </div>
+         </ul></div><!-- </div> -->
         {% endif %}
-    {% endif %}
+        {% endif %}
 
 {% endfor %}
 
