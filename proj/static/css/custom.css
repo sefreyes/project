@@ -5,6 +5,12 @@ body {
 }
 /* link colors */
 
+hr {
+margin-top: 0;
+margin-bottom: 11px;
+border-width: 5px
+}
+
 legend {
   border-bottom: 0px solid #e5e5e5;
 }
@@ -222,9 +228,6 @@ background-color: #0a523c;
 .navbar-default .navbar-link:hover {
   color: #a1d29b;
 }
-
-
-
 
 footer {
   background-color: #a1d29b;
