@@ -21,6 +21,13 @@ legend {
   border-color: #041112;
 }
 
+.hideoverflow
+{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
